@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logica de programacao com JavaScript</title>
+</head>
+
+<body>
+
+  <h1>Array</h1>
+
+  <div id="output">
+
+  </div>
+
+  <script>
+
+    var produtos = [
+      { 'nome': 'lapis', 'preco': 1, 'estoque': 18 },
+      { 'nome': 'caneta', 'preco': 2, 'estoque': 22 },
+      { 'nome': 'borracha', 'preco': .50, 'estoque': 40 },
+      { 'nome': 'apontador', 'preco': .80, 'estoque': 15 }
+    ];
+
+    var msg = '';
+
+    for (var i = 0; i < produtos.length; i++) {
+      console.log(produtos[i]);
+
+      msg += "<h2> produto: " + produtos[i].nome + "</h2>";
+      msg += "<p> preco: R$" + produtos[i].preco + "</p>";
+      msg += "<p> estoque:" + produtos[i].estoque + "</p>";
+      msg += "<p> valor do estoque: R$" + (produtos[i].preco * produtos[i].estoque) + "</p>";
+    }
+
+    document.querySelector('#output').innerHTML = msg;
+
+  </script>
+
+</body>
+
+</html>

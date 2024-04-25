@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando exercicio 8</title>
+</head>
+
+<body>
+
+  <h1>Praticando exercicio 8</h1>
+
+  <script>
+
+    var jogador1 = parseFloat(prompt('Digite um numero'));
+    var jogador2 = parseFloat(prompt('Digite outro numero'));
+
+    if (jogador1 === jogador2) {
+      alert('Voces empataram')
+    } else {
+      var nSorteado = (parseInt(Math.random() * 2));
+      alert('Numero sorteado: ' + nSorteado);
+
+    } if (nSorteado === 0) {
+      if (jogador1 > jogador2) {
+        alert('Venceu o jogador 1');
+      } else {
+        alert('Venceu jogador 2');
+      }
+    } else {
+      if (jogador1 < jogador2) {
+        alert('venceu jogador 1');
+      } else {
+        alert('venceu jogador 2');
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>

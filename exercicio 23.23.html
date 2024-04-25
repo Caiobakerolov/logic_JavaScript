@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refazendo exercicio 23</title>
+</head>
+
+<body>
+
+  <h1>Refazendo exercicio 23</h1>
+
+  <button onclick="mostrarAreaAlert()">Mostrar area Alert</button>
+  <button onclick="mostrarAreaOutput()">Mostrar area output</button>
+
+  <div id="output"></div>
+
+  <script>
+
+    function mostrarAreaAlert() {
+
+      var largura = parseFloat(prompt('Digite sua largura'));
+
+      var altura = parseFloat(prompt('Digite sua altura'));
+
+      var area = calcularArea(largura, altura);
+
+      alert(' A area total e: ' + area);
+    }
+
+    function mostrarAreaOutput() {
+
+      var largura = parseFloat(prompt('Digite sua largura'));
+
+      var altura = parseFloat(prompt('Digite sua altura'));
+
+      var area = calcularArea(largura, altura);
+
+      output = document.querySelector('#output').innerHTML = ' A area total e: ' + area;
+
+    }
+
+    function calcularArea(largura, altura) {
+      return largura * altura;
+    }
+
+  </script>
+
+</body>
+
+</html>

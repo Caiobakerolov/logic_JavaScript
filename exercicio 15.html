@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logica de programacao com JS</title>
+</head>
+
+<body>
+
+  <script>
+
+    var numero = parseFloat(prompt(`Digite um numero`));
+
+    for (var i = 10; i <= 1000; i++) {
+      document.write(numero + ` x ` + i + ` = ` + (numero * i) + ` <br> `);
+
+      if (i % 10 === 0) {
+        document.write(`<hr>`);
+      }
+
+    }
+
+    document.write(`saiu do loop`);
+
+  </script>
+
+</body>
+
+</html>

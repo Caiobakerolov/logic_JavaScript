@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refazer exercicio 22</title>
+</head>
+
+<body>
+
+  <h1>Refazer exercicio 22</h1>
+
+  <button onclick="calcular('+')"> + </button>
+  <button onclick="calcular('-')"> - </button>
+  <button onclick="calcular('*')"> * </button>
+  <button onclick="calcular('/')"> / </button>
+
+  <div id="output"></div>
+
+  <script>
+
+    var n1 = parseFloat(prompt('Digite um numero'));
+
+    escreve();
+
+    function escreve() {
+      var output = document.querySelector('#output');
+      output.innerHTML = n1;
+    }
+
+    function calcular(simbolo) {
+      var n = parseFloat(prompt('Digite um numero'));
+
+      switch (simbolo) {
+
+        case '+':
+          n1 += n;
+          break;
+
+        case '-':
+          n1 -= n;
+          break;
+
+        case '*':
+          n1 *= n;
+          break;
+
+        case '/':
+          n1 /= n;
+          break;
+      }
+      escreve();
+    }
+
+  </script>
+
+</body>
+
+</html>

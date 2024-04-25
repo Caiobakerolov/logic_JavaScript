@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logica de programacao com JavaScript</title>
+</head>
+
+<body>
+
+  <h1>Array</h1>
+
+  <div id="output">
+
+  </div>
+
+  <script>
+
+    var contact = [
+      { 'nome': 'Lucia', 'email': 'lucia@gmail.com', 'telefone': 110321321 },
+      { 'nome': 'vera', 'email': 'vera@gmail.com', 'telefone': 2164132132 },
+      { 'nome': 'wanda', 'email': 'wanda@gmail.com', 'telefone': 3415321321 },
+      { 'nome': 'carlos', 'email': 'carlos@gmail.com', 'telefone': 4132132132 }
+    ];
+
+    var msg = '';
+
+    for (var i = 0; i < contact.length; i++) {
+      console.log(contact[i]);
+
+      msg += "<h2> nome: " + contact[i].nome + "</h2>";
+      msg += "<p> E-mail: " + contact[i].email + "</p>";
+      msg += "<p> Telefone: " + contact[i].telefone + "</p>";
+
+    }
+
+    document.querySelector('#output').innerHTML = msg;
+
+  </script>
+
+</body>
+
+</html>
